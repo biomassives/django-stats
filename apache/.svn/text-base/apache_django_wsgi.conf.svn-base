@@ -1,0 +1,23 @@
+Alias /media/ "d:/py_app/djtest/media/"
+<Directory "d:/py_app/djtest/media">
+Order allow,deny
+Options Indexes
+Allow from all
+IndexOptions FancyIndexing
+</Directory>
+
+
+Alias /admin_media/ "D:/Python25/Lib/site-packages/django-1.0.2_final-py2.5.egg/django/contrib/admin/media/"
+<Directory "D:/Python25/Lib/site-packages/django-1.0.2_final-py2.5.egg/django/contrib/admin/media">
+Order allow,deny
+Options Indexes
+Allow from all
+IndexOptions FancyIndexing
+</Directory>
+
+
+WSGIScriptAlias /djtest "d:/py_app/djtest/apache/django.wsgi"
+
+<Directory "d:/py_app/djtest/apache">
+Allow from all
+</Directory>
